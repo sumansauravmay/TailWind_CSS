@@ -29,6 +29,45 @@ index.html file is in the public folder
 
 <script src="https://cdn.tailwindcss.com"></script>
 
+--------------------------------------------------------------------------------------------------------------------------
+
+1. npm init --y
+2. npm install -D tailwindcss postcss autoprefixer
+3. npm i vite
+4. npx tailwindcss init
+5. add this in the package.json folder(scripts)
+"start": "vite"
+6. npm start(to run the server)
+7. install Tailwind CSS IntelliSense
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+1. npm init -y
+2. npm install -D tailwindcss postcss autoprefixer
+3. npx tailwindcss init -p
+4. create a css file "input.css". add it to your html and edit it with this content:
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+5. In your tailwind.config.js file replace content:[], with content:["*"],
+6. Add "start":"vite" to your scripts in package.json
+7. Run npm run start command to start a dev server
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
