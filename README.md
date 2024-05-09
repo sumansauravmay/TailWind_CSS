@@ -62,17 +62,35 @@ index.html file is in the public folder
 now we can use tailwind css.
 9. Run npm run start command to start a dev server
 
+---------------------------------------------------------------------------------------------------------------------------
+// command using react in CRA(create react app)
 
+1. npx create-react-app my-project
+2. cd my-project
+3. npm install -D tailwindcss
+4. npx tailwindcss init
+5. now paste this in the tailwind.config.js file
 
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
 
+6. add this in the index.css
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+7. npm run start(to run command)
 
-
-
-
-
-
+8. write the code in the app.js or in the other component
 
 
 
