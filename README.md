@@ -92,10 +92,34 @@ module.exports = {
 
 8. write the code in the app.js or in the other component
 
+----------------------------------------------------------------------------------------------------------------------------
+
+// command using vite
+1. npm create vite@latest my-project -- --template react
+2. cd my-project
+3. npm install -D tailwindcss postcss autoprefixer
+4. npx tailwindcss init -p
+5. now paste this in the tailwind.config.js file
 
 
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
 
+6. add this in the index.css
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-
+7. npm run dev
+8. write the code in the app.js or in the other component
 
