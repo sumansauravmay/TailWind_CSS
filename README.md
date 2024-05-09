@@ -37,10 +37,10 @@ index.html file is in the public folder
 4. npx tailwindcss init
 5. add this in the package.json folder(scripts)
 "start": "vite"
-6. npm start(to run the server)
-7. install Tailwind CSS IntelliSense
+6. npm run start(to run the server)
+7. install Tailwind CSS IntelliSense(this is vs code exptension)
 -----------------------------------------------------------------------------------------------------------------------------
-
+//For the production in the indusries.
 
 1. npm init -y
 2. npm install -D tailwindcss postcss autoprefixer
@@ -54,7 +54,13 @@ index.html file is in the public folder
 
 5. In your tailwind.config.js file replace content:[], with content:["*"],
 6. Add "start":"vite" to your scripts in package.json
-7. Run npm run start command to start a dev server
+7. create a index.html file
+8.  add this in the html file in the header section
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+now we can use tailwind css.
+9. Run npm run start command to start a dev server
 
 
 
